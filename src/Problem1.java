@@ -9,16 +9,25 @@ public class Problem1 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
 
-        }
 
+        }
+        Problem1 problem1 = new Problem1();
+
+        // Вызываем метод findMin, передавая ему массив arr
+        int min = problem1.findMin(arr);
+
+        // Выводим результат
+        System.out.println(min);
     }
-    public int findMIN(int[] arr){
+    public int findMin(int[] arr){
         int min = arr[0];
-        for (int i = 0; i < arr[i]; i++) {
-            if (m)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min){
+                min = arr[i];
+            }
         }
 
-        return 0;
+        return min;
 
     }
 }
